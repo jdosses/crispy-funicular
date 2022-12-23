@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Phantom by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta http-equiv="AddType" content="model/vnd.reality">
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<script>
+			window.addEventListener("load", () => {
+			  var modelViewer = document.querySelector('model-viewer');
+			  console.log("Can activate AR: " + modelViewer.canActivateAR);
+			  modelViewer.activateAR();
+			});
+		  </script>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								
+
+							<!-- Nav -->
+								
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">Ipsum veroeros</a></li>
+							<li><a href="generic.html">Tempus etiam</a></li>
+							<li><a href="generic.html">Consequat dolor</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h1>This is a flying rocket <br />made to be experienced in AR
+								</h1>
+								<p>This is a web-viewer experiment meant to be triggered by a QR code</p>
+							</header>
+						</div>
+						<div class="previewer">
+							<model-viewer src="images/rocket-1.glb" camera-controls ar ar-modes="scene-viewer quick-look" ios-src="images/rocket-animated-1.usdz" camera-orbit="45deg 88.4deg 1.401m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 1.401m" auto-rotate poster="https://i.imgur.com/YiyjAn7.png" alt="augmented reality 3d experience">
+							</model-viewer>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
